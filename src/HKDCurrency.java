@@ -3,7 +3,7 @@ public class HKDCurrency implements Obsever {
 
 
     @Override
-    public void update() {
+    public void update(int val) {
 
     }
 

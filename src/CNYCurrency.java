@@ -8,7 +8,7 @@ public class CNYCurrency implements Obsever {
     }
 
     @Override
-    public void update() {
+    public void update(int val) {
 
     }
 
