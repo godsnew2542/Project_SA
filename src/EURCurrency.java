@@ -1,6 +1,6 @@
-public class EURCurrency  implements Obsever {
-   public static double eur = 35.3385;
+public class EURCurrency implements Obsever {
 
+        public static double eur = 35.3385;
 
     @Override
     public void update(int val) {
@@ -9,7 +9,7 @@ public class EURCurrency  implements Obsever {
 
     @Override
     public void country() {
-        System.out.println("ERU Current currency 1 eur:"+eur+" THAI");
+        System.out.println("ERU Current currency 1 EUR:"+eur+" THAI");
     }
 
 }

@@ -9,7 +9,7 @@ public class SGDCurrency implements Obsever {
 
     @Override
     public void country() {
-        System.out.println("Singapore Current currency 100 JPY:"+sgd+" THAI");
+        System.out.println("Singapore Current currency 100 SGD:"+sgd+" THAI");
     }
 
 

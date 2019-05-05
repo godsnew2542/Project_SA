@@ -13,6 +13,7 @@ public class CountryMoney {
         this.observers.remove(obs);
     }
 
+
     public void notifyObserver(){
         for (Obsever obs: this.observers){
             obs.country();
@@ -20,7 +21,7 @@ public class CountryMoney {
     }
 
     public void Updatecountry(){
-        System.out.println("");
+        System.out.println("*****************Welcome******************");
         this.notifyObserver();
     }
 }

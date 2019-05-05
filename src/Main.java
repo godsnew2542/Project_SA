@@ -1,12 +1,8 @@
 public class Main {
-
     public static void main(String[] args) {
         USDCurrency USD = new USDCurrency();
-//        USD.country();
         JPYCurrency JPY = new JPYCurrency();
-//        JPY.country();
         BNDCurrency BNC = new BNDCurrency();
-//        BNC.country();
         CNYCurrency CNY = new CNYCurrency();
         EURCurrency EUR = new EURCurrency();
         GBPCurrency GBP = new GBPCurrency();
@@ -14,7 +10,6 @@ public class Main {
         MYRCurrency MYR = new MYRCurrency();
         SARCurrency SAR = new SARCurrency();
         SGDCurrency SGD = new SGDCurrency();
-
         CountryMoney countryMoney = new CountryMoney();
 
         countryMoney.register(USD);
@@ -29,5 +24,8 @@ public class Main {
         countryMoney.register(SGD);
 
         countryMoney.Updatecountry();
+
+        ConditionMoney conditionMoney = new ConditionMoney();
+        conditionMoney.Select();
     }
 }
