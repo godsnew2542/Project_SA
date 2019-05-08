@@ -4,11 +4,9 @@ public class BNDCurrency implements Obsever {
 
     @Override
     public void country() {
+        Singleton number = Singleton.getss();
+        number.assSingleton();
         System.out.println("Brunei Darussalam Current currency 1 BND:"+bnd+" THAI");
     }
 
-    @Override
-    public void update(int val) {
-
-    }
 }

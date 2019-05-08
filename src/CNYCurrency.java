@@ -4,12 +4,9 @@ public class CNYCurrency implements Obsever {
 
     @Override
     public void country() {
+        Singleton number = Singleton.getss();
+        number.assSingleton();
         System.out.println("China Current currency 1 CNY:"+cny+" THAI");
-    }
-
-    @Override
-    public void update(int val) {
-
     }
 
 }
