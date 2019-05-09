@@ -27,8 +27,5 @@ public class Bottonmore {
     public void botton9(){
         System.out.println("Botton9");
     }
-    public void botton10(){
-
-        System.out.println("Botton10");
-    }
+    public void botton10(){ System.out.println("Botton10");}
 }

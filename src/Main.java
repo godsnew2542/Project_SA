@@ -1,6 +1,15 @@
+import java.util.Scanner;
 public class Main {
+
+    static CountryMoney countryMoney = new CountryMoney();
+    static ConditionMoney conditionMoney = new ConditionMoney();
     public static void main(String[] args) {
 
+        countryMoney.Updatecountry();
+        conditionMoney.Select();
+    }
+
+    public static void Show (){
         USDCurrency USD = new USDCurrency();
         JPYCurrency JPY = new JPYCurrency();
         BNDCurrency BNC = new BNDCurrency();
@@ -11,7 +20,6 @@ public class Main {
         MYRCurrency MYR = new MYRCurrency();
         SARCurrency SAR = new SARCurrency();
         SGDCurrency SGD = new SGDCurrency();
-        CountryMoney countryMoney = new CountryMoney();
 
         countryMoney.register(USD);
         countryMoney.register(JPY);
@@ -24,9 +32,21 @@ public class Main {
         countryMoney.register(SAR);
         countryMoney.register(SGD);
 
-        countryMoney.Updatecountry();
+        countryMoney.notifyObserver();
+        Scanner Select_Int = new Scanner(System.in);
+        int select;
+        do{
+            System.out.println("[1] : ทำต่อ \n" +
+                    "[2] : ออกจากระบบ"
+            );
+            System.out.print("กรุณาใส่หมายเลขที่คุณต้องการ : ");
+            select = Select_Int.nextInt();
 
-        ConditionMoney conditionMoney = new ConditionMoney();
-        conditionMoney.Select();
+        }while  (select != 1 && select != 2);
+        if(select ==1){
+            conditionMoney.Select();
+        }else if (select == 2){
+            System.out.println("ขอบคุณที่ใช่บริการ");
+        }
     }
 }

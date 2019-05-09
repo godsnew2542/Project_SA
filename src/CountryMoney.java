@@ -20,7 +20,7 @@ public class CountryMoney {
     }
 
     public void Updatecountry(){
-        System.out.println("*****************Welcome******************");
-        this.notifyObserver();
+        System.out.println("************** W E L C O M E *************");
+        System.out.println("****** Kingsman Currency Exchange ********");
     }
 }

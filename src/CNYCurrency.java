@@ -2,6 +2,8 @@ public class CNYCurrency implements Obsever {
 
     public static double cny = 4.6583 ;//จีน
 
+
+
     @Override
     public void country() {
         Singleton number = Singleton.getss();
