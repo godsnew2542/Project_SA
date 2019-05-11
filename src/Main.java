@@ -46,7 +46,7 @@ public class Main {
         if(select ==1){
             conditionMoney.Select();
         }else if (select == 2){
-            System.out.println("ขอบคุณที่ใช่บริการ");
+            System.out.println("------------ขอบคุณที่ใช่บริการ------------");
         }
     }
 }

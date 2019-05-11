@@ -22,7 +22,7 @@ public class ConditionMoney {
                 main.Show();
             }
             else{
-                System.out.println("ออก");
+                System.out.println("------------ขอบคุณที่ใช่บริการ------------");
             }
     }
 
